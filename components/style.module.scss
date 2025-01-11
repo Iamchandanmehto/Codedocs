@@ -1,0 +1,57 @@
+.button {
+    position: relative;
+    right: 0;
+    width: 60px;
+    // margin: 20px;
+    margin-right: 20px;
+    height: 60px;
+    background-color: rgb(2, 2, 2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .burger {
+    width: 25px; /* Adjust width as needed */
+    height: 3px;
+    background-color: white;
+    position: relative; /* Ensure pseudo-elements are positioned relative to this */
+    transition: all 0.3s ease-in-out;
+  
+    &::after,
+    &::before {
+      content: "";
+      background-color: white;
+      height: 3px;
+      width: 100%; /* Match the width of the parent */
+      position: absolute;
+      left: 0;
+      transition: all 0.3s ease-in-out; /* Smooth transitions */
+    }
+  
+    &::after {
+      top: 8px; /* Adjust spacing between lines */
+    }
+  
+    &::before {
+      top: -8px; /* Adjust spacing between lines */
+    }
+  }
+  
+  .burgerActive {
+    background-color: transparent; /* Hide the middle line */
+    
+    &::after {
+      top: 0; /* Align with the center */
+      transform: rotate(-45deg);
+    }
+  
+    &::before {
+      top: 0; /* Align with the center */
+      transform: rotate(45deg);
+    }
+  }
+  
