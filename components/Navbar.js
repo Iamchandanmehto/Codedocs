@@ -23,7 +23,7 @@ const [isActive, setIsActive] = React.useState(false);
     
       <div className='flex flex-row  items-center  justify-center md:justify-between  '>
       <Link href="/" className='relative z-10 h-42 w-48'>
-<Image src={logo} height={110}  width={110} alt=""  className=' md:px-4 px-2 '/>
+<Image src={logo} height={120}  width={120} alt=""  className=' md:px-4 px-2 '/>
 </Link>
 
 <div className=' md:hidden'>
