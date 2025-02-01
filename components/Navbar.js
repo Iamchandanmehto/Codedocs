@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState } from 'react'
 import Link from 'next/link'
-import logo from '../public/assets/logo.svg'
+import logo from '../public/assets/logo.png'
 import logoweb from '../public/assets/logo-transparent.png'
 import Image from 'next/image';
 import SearchBar from './ui/searchBar';
@@ -21,9 +21,9 @@ const [isActive, setIsActive] = React.useState(false);
   return (
     <nav className=' h-15  w-full z-4  relative rounded  ' >
     
-      <div className='flex flex-row  items-center  justify-center md:justify-center  '>
+      <div className='flex flex-row  items-center  justify-center md:justify-between  '>
       <Link href="/" className='relative z-10 h-42 w-48'>
-<Image src={logo} height={90}  width={90} alt=""  className=' md:px-4 px-2 '/>
+<Image src={logo} height={110}  width={110} alt=""  className=' md:px-4 px-2 '/>
 </Link>
 
 <div className=' md:hidden'>
@@ -36,7 +36,7 @@ const [isActive, setIsActive] = React.useState(false);
 </div>
       <div className='flex flex-row items-center  '>
 
-      <nav className="mt-0 justify-items-center justify-center hidden md:flex">
+      <nav className="mt-0 justify-items-center justify-between hidden md:flex">
     <Link
       href={"/"}
       className="py-2 md:mx-2 px-4 hover:text-[#3F83F8] border shadow-custom rounded-3xl float-left bg-white lg:text-lg"
@@ -62,13 +62,13 @@ const [isActive, setIsActive] = React.useState(false);
       Services
     </Link>
   </nav>
-
-  <div className='mr-3'>
-  <SearchBar/>
-  </div>
-  <div className='hidden sm:block mr-14'>
+  <div className='hidden sm:block  '>
   <NavigationMenuDemo/>
   </div>
+  <div className='ml-52'>
+  <SearchBar/>
+  </div>
+
   <div onClick={() => setIsActive(!isActive)} className={styles.button}>
   <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
   {isActive && <Nav/>}

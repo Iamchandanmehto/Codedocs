@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useRef, useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+
 import html  from '../public/assets/HTML.svg'
 import csslogo from '../public/assets/csslogo.svg'
 import javascript from '../public/assets/javascript.svg'
@@ -44,7 +45,7 @@ export default function Home() {
       <div className=" justify-center flex mt-10 md:mt-12  ">
   <div className="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4  sm:gap-4 xl:gap-8 sm:space-y-0  items-center justify-center cursor-pointer ">
     {/* Grid Item 1 */}
-    <Link href={'/HTMLBasic'}><div className="bg-gray-200  border align-middle mb-5  border-[#bcd2f0] rounded-xl mt-6 py-5 w-80 h-52 shadow-md text-center flex  flex-col justify-center items-center hover:shadow-xl ">
+    <Link href={'/HTMLBasic'}><div className="bg-gray-200  border border-[#bcd2f0] mb-5  rounded-xl py-5 w-80 h-52 shadow-md text-center flex  flex-col justify-center items-center hover:shadow-xl ">
     <Image   src={html }  height={80} width={80} alt="" />
       <p className="text-sm mt-5 md:text-lg font-bold text-slate-900">HTML</p>
     </div>
