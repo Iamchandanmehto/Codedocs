@@ -65,11 +65,11 @@ const [isActive, setIsActive] = React.useState(false);
   <div className='hidden sm:block  '>
   <NavigationMenuDemo/>
   </div>
-  <div className='ml-52'>
+  <div className='md:ml-52 mr-4'>
   <SearchBar/>
   </div>
 
-  <div onClick={() => setIsActive(!isActive)} className={styles.button}>
+  <div  onClick={() => setIsActive(!isActive)} className={styles.button}>
   <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
   {isActive && <Nav/>}
 </div>

@@ -1,10 +1,10 @@
 .button {
     position: relative;
     right: 0;
-    width: 45px;
+    width: 35px;
     // margin: 20px;
     margin-right: 20px;
-    height: 45px;
+    height: 35px;
     background-color: rgb(2, 2, 2);
     border-radius: 50%;
     display: flex;
@@ -15,7 +15,7 @@
   }
   
   .burger {
-    width: 25px; /* Adjust width as needed */
+    width: 20px; /* Adjust width as needed */
     height: 3px;
     background-color: white;
     position: relative; /* Ensure pseudo-elements are positioned relative to this */
@@ -55,3 +55,14 @@
     }
   }
   
+  @media screen and (min-width: 1024px) {
+    .button {
+      height: 46px;
+      width: 46px;
+    }
+  
+    // .burger {
+    //   height: 36px;
+    //   width: 36px;
+    // }
+  }
